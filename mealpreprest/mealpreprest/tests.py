@@ -1,3 +1,5 @@
 from django.test import TestCase
 
-# Create your tests here.
+def test_max():
+    low = 2
+    assert low > 3
