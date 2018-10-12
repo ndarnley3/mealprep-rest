@@ -27,6 +27,7 @@ router.register(r'recipes', views.RecipeViewSet)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('app/', include('mpr_frontend.urls')),
     url(r'^', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework'))
 ]
